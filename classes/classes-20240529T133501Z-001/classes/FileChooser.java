@@ -108,7 +108,8 @@ public class FileChooser
         // get the URL for where we loaded this class 
         Class currClass = Class.forName("FileChooser");
         URL classURL = currClass.getResource("FileChooser.class");
-        URL fileURL = new URL(classURL,"../images/");
+        // URL fileURL = new URL(classURL,"../images/");
+        directory = "C:/Users/student/piclab/pictures/pictures/images-20240529T133510Z-001/";
         directory = fileURL.getPath();
         directory = URLDecoder.decode(directory, "UTF-8");
         dirFile = new File(directory);
